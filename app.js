@@ -24,6 +24,6 @@ app.use('/contact', function(req, res){
  
 app.use('/', function(req, res){
       
-  res.render('home.hbs');
+  res.render('home.hbs', contact);
 });
 app.listen(3000, () => console.log('Server is running'));
